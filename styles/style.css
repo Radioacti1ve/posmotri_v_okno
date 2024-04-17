@@ -90,6 +90,7 @@ ol {
 }
 
 .result__video-container {
+  position: relative;
   width: 711px;
   height: 386px;
   margin-bottom: 16px;
@@ -163,6 +164,7 @@ ol {
 }
 
 .content__list {
+  position: relative;
   max-height: 290px;
   max-width: 400px;
   overflow: hidden auto;
