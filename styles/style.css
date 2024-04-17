@@ -9,6 +9,8 @@ html {
 }
 
 .page {
+  display: flex;
+  align-items: center;
   inline-size: 1200px;
   block-size: 100%;
   margin: auto;
@@ -35,12 +37,6 @@ fieldset {
 ul,
 ol {
   list-style: none;
-}
-
-.page {
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .search-form__fieldset {
@@ -72,9 +68,9 @@ ol {
 
 .content {
   display: grid;
-  gap: 2.5%;
+  align-items: end;
+  gap: 20px;
   grid-template-columns: 0.75fr 1fr;
-  padding-top: 133px;
   margin: 0 auto;
 }
 
