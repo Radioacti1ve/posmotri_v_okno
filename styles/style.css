@@ -76,13 +76,13 @@ ol {
 
 .content {
   display: grid;
-  align-items: end;
+  align-items: start;
   gap: 20px;
   grid-template-columns: 0.75fr 1fr;
-  margin: 0 auto;
 }
 
 .result {
+  align-self: end;
   padding-top: 78px;
 }
 
@@ -93,6 +93,7 @@ ol {
 }
 
 .search-form__fieldset-title {
+  margin-bottom: 5px;
   font-family: "Fira Sans Condensed", sans-serif;
   font-weight: 400;
   font-size: 18px;
