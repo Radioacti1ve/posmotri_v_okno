@@ -13,7 +13,7 @@ html {
   align-items: center;
   inline-size: 1200px;
   block-size: 100%;
-  margin: auto;
+  margin: 0 auto;
   color: #fff;
   font-family: "Fira Sans Condensed", sans-serif;
   font-size: 18px;
@@ -46,6 +46,14 @@ ol {
 .button {
   cursor: pointer;
   padding: 6px;
+  color: #fff;
+  background-color: transparent;
+  border: 1px solid #fff;
+  font-weight: 700;
+  font-size: 18px;
+  text-align: center;
+  width: 27%;
+  height: 34px;
 }
 
 .button:active {
@@ -109,23 +117,12 @@ ol {
   background-color: transparent;
   font-weight: 400;
   font-size: 18px;
-  color: rgba(255, 255, 255, 0.7);
+  color: #fff;
   min-width: 225px;
   border: none;
   appearance: none;
-  border-bottom: 1px solid #fff;
-  border-top: 1px solid #fff;
-}
-
-.search-form__submit-button {
-  color: #fff;
-  background-color: transparent;
-  border: 1px solid #fff;
-  font-weight: 700;
-  font-size: 18px;
-  text-align: center;
-  width: 27%;
-  height: 34px;
+  border-bottom: 1px solid currentColor;
+  border-top: 1px solid currentColor;
 }
 
 .search-form__label {
@@ -167,7 +164,7 @@ ol {
 
 .content__list {
   position: relative;
-  max-height: 290px;
+  max-height: 300px;
   max-width: 400px;
   overflow: hidden auto;
   scrollbar-width: thin;
@@ -198,7 +195,8 @@ ol {
 
 .content__video-card-thumbnail {
   width: 194px;
-}
+  object-fit: cover;
+  object-position: center;}
 
 .content__card-link {
   display: block;
@@ -208,6 +206,7 @@ ol {
 
 .content__video-card-description-container {
   width: 100%;
+  max-width: 200px;
   color: #fff;
 }
 
@@ -216,6 +215,9 @@ ol {
   font-size: 30px;
   font-weight: 700;
   text-transform: uppercase;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .content__video-card-description {
@@ -225,15 +227,7 @@ ol {
 }
 
 .more-button {
-  background-color: transparent;
   width: 100%;
-  font-family: "Fira Sans Condensed", sans-serif;
-  font-weight: 700;
-  font-size: 18px;
-  text-align: center;
-  color: #fff;
-  border: 1px solid #fff;
-  height: 34px;
 }
 
 .search-form__textfield:focus,
@@ -263,18 +257,16 @@ ol {
   outline-offset: 1px;
 }
 
-.search-form__submit-button:focus,
-.more-button:focus {
+.button:focus {
   outline: none;
 }
 
-.search-form__submit-button:focus-visible {
+.button:focus-visible {
   outline: 1px solid #fff;
   outline-offset: 1px;
 }
 
 .more-button:focus-visible {
-  outline: 1px solid #fff;
   outline-offset: -3px;
 }
 
