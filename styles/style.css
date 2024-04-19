@@ -54,6 +54,7 @@ ol {
   align-items: flex-end;
   gap: 30px;
   inline-size: 1140px;
+  block-size: 534px;
 }
 
 .result__video-container {
@@ -146,7 +147,7 @@ ol {
   display: flex;
   place-items: center;
   inline-size: 19px;
-  height: 19px;
+  block-size: 19px;
   background-color: transparent;
   border: 1px solid #fff;
 }
@@ -154,7 +155,7 @@ ol {
 .search-form__checkbox:checked + .search-form__pseudo-checkbox::after {
   content: "";
   inline-size: 15px;
-  height: 15px;
+  block-size: 15px;
   background-color: #fff;
   margin: 1px;
 }
@@ -201,6 +202,7 @@ ol {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-self: flex-start;
   gap: 26px;
   block-size: 100%;
   inline-size: 100%;
