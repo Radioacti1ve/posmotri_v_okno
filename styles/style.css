@@ -54,7 +54,6 @@ ol {
   align-items: flex-end;
   gap: 30px;
   inline-size: 1140px;
-  block-size: 534px;
 }
 
 .result__video-container {
@@ -206,7 +205,6 @@ ol {
   gap: 26px;
   block-size: 100%;
   inline-size: 100%;
-  overflow: hidden;
 }
 
 .title {
@@ -224,8 +222,7 @@ ol {
 
 .content__list {
   position: relative;
-  max-block-size: 298px;
-  max-inline-size: 400px;
+  block-size: 298px;
   overflow-y: auto; 
   display: flex;
   flex-direction: column;
@@ -250,7 +247,7 @@ ol {
 
 .content__card-link:hover {
   text-decoration: underline solid #fff 2px;
-  text-underline-offset: 3px;
+  text-underline-offset: 1px;
 }
 
 .content__card-link:focus {
